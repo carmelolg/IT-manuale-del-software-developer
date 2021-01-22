@@ -1,0 +1,33 @@
+\section{Le cinque buone maniere}
+
+\begin{enumerate}
+
+%1
+\item \textbf{Rispetta sempre gli standard}
+
+E' sempre buona norma utilizzare standard per l'impostazione del codice, i design-pattern della Gang of Four sono un ottimo esempio. Potresti guadagnarti la stima e il rispetto dei colleghi se produci software di qualità, al contrario se ti lanci verso un hackathon di spaghetti-code probabilmente finirai per essere il bersaglio durante il gioco a freccette nella sala relax aziendale.
+
+%2
+\item \textbf{Proteggi il branch principale e segui un versioning ben preciso}
+
+Non lasciare che il branch \emph{master} sia accessibile da tutti, solo una persona (con una seniority adeguata) deve avere l'onere di eseguire l'allineamento del branch principale. Una volta scelto il pattern di versioning seguilo sempre, evita customizzazioni o di uscire dai binari. Inoltre prima di allineare i branch condivisi (e.g. develop, uat, collaudo, \dots) testa il codice in maniera meticolosa.
+
+
+%3
+\item \textbf{Commenta e indenta il codice adeguatamente}
+
+Ad inizio progetto bisogna allineare le configurazioni di indentazione di ogni membro del team. Di solito gli IDE ti consentono di sovrascrivere le configurazioni di default. Sceglietene una e allineate tutti gli IDE dei componenti del team. E' anche un bel gesto commentare (senza scrivere un poema) il codice sorgente e i colleghi apprezzeranno. Creare una documentazione del codice sorgente, sopratutto per le componenti riusabili e generiche, è altrettando un gesto apprezzato. Se segui questo consiglio hai l'opportunità di diventare la rockstar del tuo open-space, non mi farei sfuggire questa occasione.
+
+
+%4
+\item \textbf{Coinvolgi subito i colleghi interessati se sospetti un \emph{merge-conflict}}
+
+Se stai sviluppando codice che impatta file sorgente attualmente in lavorazione (o già implementati) di altri componenti del team, coinvolgi subito i colleghi per evitare conflitti successivamente. Oltre ad essere una buona maniera potresti evitare di perdere una numerosa quantità di codice già sviluppato.
+
+%5
+\item \textbf{Proponi pair-programming in caso di refactoring}
+
+Se trovi del codice da refattorizzare e vuoi continuare il tuo percorso verso la santità, refattorizzalo. Sarebbe una grande azione anche coinvolgere l'autore del codice da refattorizzare, un buon sano pair-programming migliorerà le skill di programmazione di entrambi.
+
+
+\end{enumerate}
