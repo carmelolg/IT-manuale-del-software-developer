@@ -1,4 +1,4 @@
-<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" width="70" alt="License">
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" width="90" alt="License">
 
 # Manuale del Software Developer
 
