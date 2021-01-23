@@ -15,7 +15,7 @@ Le dieci regole fondamentali
 
     Durante la lettura di un libro, scritto da grandi *software architect*, mi son trovato davanti la seguente frase: \<\<Pensiamo che non abbia senso sviluppare software se non si ha intenzione di farlo bene\>\>. Mi ha fatto molto riflettere perché a mio parere si può contestualizzare in ogni ambiente di lavoro. Inutile fare per forza qualcosa se non si riesce a contribuire nel migliore dei modi. Scrivere codice fatto bene è come un operazione chirurgica, tutto il team deve essere compatto e non ci si può permettere di lesionare parti del paziente. Se non è la tua strada proponiti per un altro dipartimento della tua azienda o in altri contesti. Revisionando la celebre frase \<\<Meglio un buon padre che un cattivo prete\>\>, con la stessa potenza mistica penso che sia **meglio fare qualcos’altro bene che sviluppare terribilmente**.
 
-2.  **Dì \<\<no\>\> al tutto e subito**
+2.  **Di' \<\<no\>\> al tutto e subito**
 
     Spesso, nei più svariati contesti, ci sono feature e correzioni da implementare a tempo zero (o addirittura per ieri). Ovviamente le situazioni di emergenza esistono e vanno trattate come tali. Se però l’emergenza diventa la quotidianità le opzioni sono due:
 
