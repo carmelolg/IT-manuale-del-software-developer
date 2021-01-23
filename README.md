@@ -1,3 +1,5 @@
+[Versione PDF](https://github.com/carmelolg/it-pragmatic-programmer/blob/master/Manuale%20del%20Software%20Developer%20-%20v1.pdf)
+
 Introduzione
 ============
 
@@ -112,4 +114,6 @@ Cinque consigli aggiuntivi
 
     Fare parte di community fuori dal contesto lavorativo può aiutare ad ingrandire il bagaglio culturale e tecnico di un professionista. Informati su gruppi attivi nella tua zona o nel tuo quartiere, partecipa ai meetup organizzati e studia sempre nuove tecnologie che potrebbero interessarti.
 
+Bibliografia
+==========================
 <span>99</span> Andrew Hunt e David Thomas (2018). [Il Pragmatic Programmer. Guida per manovali del software che voglioni diventare maestri.](https://www.amazon.it/dp/8850332548/ref=cm_sw_em_r_mt_dp_AvYCFbNVMFA1X) .
