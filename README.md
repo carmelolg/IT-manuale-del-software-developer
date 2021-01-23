@@ -1,4 +1,4 @@
-![License](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png){ width=50% }
+![License](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png){:width=50%}
 
 # Manuale del Software Developer
 
