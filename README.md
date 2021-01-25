@@ -132,7 +132,7 @@ Cinque consigli aggiuntivi
 
 2.  **Ricrea in locale un ambiente simile a quello in cui si effettua il *deploy***
 
-    Ricrea in locale l’ambiente di sviluppo o produzione. Ti eviterà di pronunciare la famigerata frase \<\<a me in locale và\>\>, è fastidiossima e ormai non più accettata come giustificazione. Con strumenti come **Docker** è possibile ricreare l’ambiente adeguatamente senza troppi fronzoli.
+    Ricrea in locale l’ambiente di sviluppo o produzione. Ti eviterà di pronunciare la famigerata frase \<\<a me in locale va'\>\>, è fastidiossima e ormai non più accettata come giustificazione. Con strumenti come **Docker** è possibile ricreare l’ambiente adeguatamente senza troppi fronzoli.
 
 3.  **Leggi il codice degli altri**
 
