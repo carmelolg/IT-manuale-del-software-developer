@@ -33,10 +33,10 @@ Le dieci regole fondamentali
 2.  **Di' \<\<no\>\> al tutto e subito**
 
     Spesso, nei più svariati contesti, ci sono feature e correzioni da implementare a tempo zero (o addirittura per ieri). Ovviamente le situazioni di emergenza esistono e vanno trattate come tali. Se però l’emergenza diventa la quotidianità le opzioni sono due:
+	
+    * Non siete nell’azienda giusta
 
-    -   Non siete nell’azienda giusta
-
-    -   A tutti i livelli di seniority c’è un problema di organizzazione da risolvere
+    * A tutti i livelli di seniority c’è un problema di organizzazione da risolvere
 
     In ogni caso il mio suggerimento è: **niente panico**. La prima cosa che lo sviluppatore medio pensa è: \<\<ora gli mollo un *taccone* e in mezz’ora sono pronto per il deploy in produzione\>\>. Niente di più sbagliato. Agendo secondo questo principio del *tutto e subito* stiamo solamente portando avanti la **teoria dei vetri rotti**.
 	
