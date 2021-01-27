@@ -21,23 +21,15 @@
 
 \documentclass[twoside,onecolumn]{article}
 
-\usepackage{blindtext} % Package to generate dummy text throughout this template 
-
 \usepackage[sc]{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[utf8]{inputenc} % Enable the use of non-ASCII characters such as "«" in the document content
 \linespread{1.05} % Line spacing - Palatino needs more space between lines
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
 \usepackage[italian]{babel} % Language hyphenation and typographical rules
 
 \usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
-\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
-\usepackage{booktabs} % Horizontal rules in tables
-
-\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
-
-\usepackage{quoting}
-\quotingsetup{font=small}
 
 \usepackage{enumitem} % Customized lists
 \setlist[itemize]{noitemsep} % Make itemize lists more compact
@@ -71,11 +63,12 @@
 
 \pretitle{\begin{center}\Huge\bfseries} % Article title formatting
 \posttitle{\end{center}} % Article title closing formatting
-\title{Manuale del Software Developer  \large Semplici regole per migliorare le tue abilità da sviluppatore}
+\title{Manuale del Software Developer \\ \large Semplici regole per migliorare le tue abilità da sviluppatore}
 \author{
 	\textsc{Carmelo La Gamba}\\[1ex]
 	\normalsize
-	\href{https://carmelolg.github.io/}{\faicon{github}}
+	\href{https://carmelolg.github.io/}{\faicon{github}}%
+	\hspace{0.75em}%
 	\href{https://t.me/carmelolg}{\faicon{paper-plane}}
 }
 \date{} % Leave empty to omit a date
@@ -121,7 +114,7 @@
 
 \bibitem [Andrew Hunt, David Thomas]{}
 Andrew Hunt e David Thomas (2018).
-\newblock \href{https://www.amazon.it/dp/8850332548/ref=cm_sw_em_r_mt_dp_AvYCFbNVMFA1X}{Il Pragmatic Programmer. Guida per manovali del software che voglioni diventare maestri.}
+\newblock \href{https://www.amazon.it/dp/8850332548/ref=cm_sw_em_r_mt_dp_AvYCFbNVMFA1X}{Il Pragmatic Programmer. Guida per manovali del software che vogliono diventare maestri.}
 \newblock {\em Apogeo}.
  
 \end{thebibliography}
