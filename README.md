@@ -134,7 +134,7 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
     Proponi qualsiasi cosa, metti in campo le tue idee per migliorare lo sviluppo di un progetto. Si può proporre metodi o tecniche per minimizzare i tempi organizzativi (ad esempio su come diminuire i tempi di uno *stand-up meeting* usando Scrum) oppure su come scrivere i commenti di un *commit*. Tutto è utile, se proposto per migliorare la vita del team.
 
-5.  **Partecipa ai meetup**
+5.  **Partecipa ai *meetup***
 
     Fare parte di *community* fuori dal contesto lavorativo può aiutare ad ingrandire il bagaglio culturale e tecnico di un professionista. Informati su gruppi attivi nella tua zona o nel tuo quartiere, partecipa ai *meetup* organizzati e studia sempre nuove tecnologie che potrebbero interessarti.
 
