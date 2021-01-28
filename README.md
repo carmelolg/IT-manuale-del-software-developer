@@ -22,13 +22,13 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 1.  **Se non ti piace sviluppare, non lo fare**
 
     Durante la lettura di un libro scritto da grandi *software architect*, mi son trovato davanti la seguente frase: «Pensiamo che non abbia senso sviluppare software se non si ha intenzione di farlo bene». 
-	Mi ha fatto molto riflettere, perché a mio parere si può contestualizzare in ogni ambiente di lavoro. Inutile fare per forza qualcosa, se non si riesce a contribuire nel migliore dei modi. Scrivere codice fatto bene è come un’operazione chirurgica: tutto il *team* deve essere compatto e non ci si può permettere di lesionare parti del paziente. Se non è la tua strada, proponiti per un altro dipartimento della tua azienda o in altri contesti. 
+	Mi ha fatto molto riflettere, perché a mio parere si può contestualizzare in ogni ambiente di lavoro. Inutile fare per forza qualcosa, se non si riesce a contribuire nel migliore dei modi. Scrivere codice fatto bene è come un’operazione chirurgica: tutto il team deve essere compatto e non ci si può permettere di lesionare parti del paziente. Se non è la tua strada, proponiti per un altro dipartimento della tua azienda o in altri contesti. 
 	
 	Revisionando la celebre frase «Meglio un buon padre che un cattivo prete», con la stessa potenza mistica penso che sia «Meglio fare qualcos’altro bene che sviluppare terribilmente».
 
 2.  **Di’ «no» al tutto e subito**
 
-    Spesso, nei più svariati contesti, ci sono feature e correzioni da implementare a tempo zero (o addirittura per ieri). Ovviamente le situazioni di emergenza esistono e vanno trattate come tali. Se però l’emergenza diventa la quotidianità le opzioni sono due:
+    Spesso, nei più svariati contesti, ci sono *feature* e correzioni da implementare a tempo zero (o addirittura per ieri). Ovviamente le situazioni di emergenza esistono e vanno trattate come tali. Se però l’emergenza diventa la quotidianità le opzioni sono due:
 	
     * non siete nell’azienda giusta;
     * a tutti i livelli di *seniority* c’è un problema di organizzazione da risolvere.
@@ -54,17 +54,16 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 4.  **Confrontati**
 
-    Il confronto in un *team* è il vero punto di forza.
+    Il confronto in un team è il vero punto di forza.
     
-	Quando non sai come impostare il codice sorgente, chiedi di fare *pair-programming* ad un collega o al *Technical Leader* di riferimento: le orchestre funzionano perché sono composte da tanti musicisti con strumenti diversi; non rischiare di fare un assolo di bombardino (non è bello e né orecchiabile, fidati).
+	Quando non sai come impostare il codice sorgente, chiedi di fare *pair-programming* ad un collega o al *Technical Leader* di riferimento: le orchestre funzionano perché sono composte da tanti musicisti con strumenti diversi; non rischiare di fare un assolo di bombardino (non è bello né orecchiabile, fidati).
 
 5.  **Sviluppa codice *ortogonale***
 
     Questo consiglio è più che attuale ed è la base per le architetture di tipo SOA (*Service-oriented architecture*).
     
-	L’ideale è progettare e sviluppare componenti software *ortogonali*, cioè completamente isolate. La modifica di ogni componente non deve interferire con il corretto funzionamento delle altre. Immaginate una navicella spaziale diretta verso Marte: a metà del viaggio, uno dei pannelli solari smette di produrre energia, ma gli altri continuano a funzionare indisturbati, evitando il collasso immediato di tutto il sistema vitale della navicella spaziale. 
+	L’ideale è progettare e sviluppare componenti software *ortogonali*, cioè completamente isolate. La modifica di ogni componente non deve interferire con il corretto funzionamento delle altre. Immaginate una navicella spaziale diretta verso Marte: a metà del viaggio, uno dei pannelli solari smette di produrre energia, ma gli altri continuano a funzionare indisturbati, evitando il collasso immediato di tutto il sistema vitale della navicella spaziale. Il software è come una navicella spaziale: ogni componente è a sé stante, ha il suo scopo e deve avere una *singola responsabilità*.
 	
-	Il software è come una navicella spaziale: ogni componente è a sé stante, ha il suo scopo e deve avere una *singola responsabilità*.
     Se si progetta software con componenti *ortogonali*, si fa sempre la scelta giusta.
 
 6.  **Ragiona e rifletti prima di scrivere codice**
@@ -79,15 +78,15 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 	
 	Consapevole del fatto che tantissimo codice sorgente non è coperto da test unitari, ci affidiamo alla possibilità che qualche anima di buon cuore possa implementarli anche successivamente. Meglio tardi che mai, ma perché non essere proprio noi quell’anima di buon cuore?
     
-	E per i test utente? Testa le evolutive per almeno quindici minuti. Il numero è del tutto arbitrario: per definire una funzionalità «ben testata» si può scegliere il tempo necessario in base all’entità della *feature*. Penso possa essere utile creare uno schema con tutte le casistiche da testare per ogni funzionalità. L’importante è essere certi di coprire i test utente adeguatamente.
+	E per i test utente? Testa le evolutive per almeno quindici minuti. Il numero è del tutto arbitrario: per definire una funzionalità “ben testata” si può scegliere il tempo necessario in base all’entità della *feature*. Penso possa essere utile creare uno schema con tutte le casistiche da testare per ogni funzionalità. L’importante è essere certi di coprire i test utente adeguatamente.
 
 8.  **Isolati durante lo sviluppo**
 
     Ad un primo appuntamento è galateo spegnere il telefono per dedicare le giuste attenzioni al partner che si ha di fronte. Mentre si sviluppa codice, non bisogna farsi distrarre da colleghi o agenti esterni, ma bisogna essere un’anima sola con il proprio computer. Il vostro partner è il computer. Procuratevi delle cuffie isolanti o, se ne avete l’occasione, andate in uffici o posti isolati per almeno due ore. Spegnete ogni notifica possibile e immaginabile.
 
-9.  **Mantieni aggiornato il *team***
+9.  **Mantieni aggiornato il team**
 
-    Per portare avanti gli sviluppi ed organizzare il *team* in maniera semplice, spesso si utilizzano strumenti come Board, Kanban o simili. Qualsiasi cosa utilizziate, aggiornatela. Aggiornare il *Team Leader* e i colleghi è essenziale. È come aggiungere dell’olio ad una catena di montaggio: anche una singola persona può inceppare la catena, se non olia bene la sua componente.
+    Per portare avanti gli sviluppi ed organizzare il team in maniera semplice, spesso si utilizzano strumenti come Board, Kanban o simili. Qualsiasi cosa utilizziate, aggiornatela. Aggiornare il *Team Leader* e i colleghi è essenziale. È come aggiungere dell’olio ad una catena di montaggio: anche una singola persona può inceppare la catena, se non olia bene la sua componente.
 
 10. **Leggi libri tecnici**
 
@@ -105,11 +104,11 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 3.  **Commenta e indenta il codice adeguatamente**
 
-    Ad inizio progetto, bisogna allineare le configurazioni di indentazione di ogni membro del *team*. Di solito gli IDE ti consentono di sovrascrivere le configurazioni di *default*. Sceglietene una e allineate tutti gli IDE dei componenti del *team*. È anche un bel gesto commentare (senza scrivere un poema) il codice sorgente: i colleghi apprezzeranno. Creare una documentazione del codice sorgente, soprattutto per le componenti riusabili e generiche, è altrettando un gesto apprezzato. Se segui questo consiglio, hai l’opportunità di diventare la *rockstar* del tuo *open-space*. Non mi farei sfuggire questa occasione.
+    Ad inizio progetto, bisogna allineare le configurazioni di indentazione di ogni membro del team. Di solito gli IDE ti consentono di sovrascrivere le configurazioni di *default*. Sceglietene una e allineate tutti gli IDE dei componenti del team. È anche un bel gesto commentare (senza scrivere un poema) il codice sorgente: i colleghi apprezzeranno. Creare una documentazione del codice sorgente, soprattutto per le componenti riusabili e generiche, è altrettanto un gesto apprezzato. Se segui questo consiglio, hai l’opportunità di diventare la *rock star* del tuo *open space*. Non mi farei sfuggire questa occasione.
 
 4.  **Coinvolgi subito i colleghi interessati se sospetti un *merge-conflict***
 
-    Se stai sviluppando codice che impatta file sorgente attualmente in lavorazione (o già implementati) di altri componenti del *team*, coinvolgi subito i colleghi per evitare conflitti successivamente. Oltre ad essere una buona maniera, potresti evitare di perdere una numerosa quantità di codice già sviluppato.
+    Se stai sviluppando codice che impatta file sorgente attualmente in lavorazione (o già implementati) di altri componenti del team, coinvolgi subito i colleghi per evitare conflitti successivamente. Oltre ad essere una buona maniera, potresti evitare di perdere una numerosa quantità di codice già sviluppato.
 
 5.  **Proponi *pair-programming* in caso di *refactoring***
 
@@ -119,7 +118,7 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 1.  **Non sottovalutare mai i *log***
 
-    Proprio cinque minuti fa un mio collega mi ha scritto la seguente frase: «Ho un problema in produzione e dai log non riesco a capire nulla. Puoi aiutarmi?». Pensate quanto costerà questa *hotfix*: due persone per almeno due ore, per un problema che potrebbe essere risolto da una singola persona nel giro di poco tempo. Un buon sistema di *logging*, seguendo degli standard (in alcuni casi imposti per legge), può salvarti da brutte situazioni più spesso di quanto immagini. 
+    Proprio cinque minuti fa un mio collega mi ha scritto la seguente frase: «Ho un problema in produzione e dai *log* non riesco a capire nulla. Puoi aiutarmi?». Pensate quanto costerà questa *hotfix*: due persone per almeno due ore, per un problema che potrebbe essere risolto da una singola persona nel giro di poco tempo. Un buon sistema di *logging*, seguendo degli standard (in alcuni casi imposti per legge), può salvarti da brutte situazioni più spesso di quanto immagini. 
 	
 	Usa dunque tutti i livelli di *log* (i più usati sono `INFO`, `DEBUG`, `WARN`) adeguatamente e ringrazierai il giorno di averli inseriti nel codice.
 

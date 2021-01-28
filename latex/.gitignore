@@ -12,6 +12,7 @@
 *.cb2
 .*.lb
 tmp.tex
+main.pdf
 
 ## Intermediate documents:
 *.dvi
