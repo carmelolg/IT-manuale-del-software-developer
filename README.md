@@ -7,15 +7,15 @@
 
 # Introduzione
 
-Sviluppo *software* per diletto, studio e infine per lavoro, da ormai oltre dieci anni. Ho seguito l’evoluzione di ogni tecnica e metodologia, compreso l’avvento di nuovi *framework* capaci di semplificare tutte le operazioni che fino a qualche anno fa mi impiegavano giorni o settimane.
+Sviluppo software per diletto, studio e infine per lavoro, da ormai oltre dieci anni. Ho seguito l’evoluzione di ogni tecnica e metodologia, compreso l’avvento di nuovi *framework* capaci di semplificare tutte le operazioni che fino a qualche anno fa mi impiegavano giorni o settimane.
 
-Al primo anno di università, ho affrontato un grosso scoglio: educare la mia mente a ragionare in modo algoritmico. Non l’ho fatto da solo, ma insieme ad insegnanti e colleghi universitari. Sapevo a cosa andavo incontro durante lo studio di materie vicine alla matematica o fisica, ma su tutto ciò che riguardava lo sviluppo del software ero completamente allo sbaraglio. Visto che tutto il percorso universitario era composto per almeno il 60% da materie vicino all’IT, posso confermare che è stato come una notte al museo durata cinque anni e due tesi.
+Al primo anno di università, ho affrontato un grosso scoglio: educare la mia mente a ragionare in modo algoritmico. Non l’ho fatto da solo, ma insieme ad insegnanti e colleghi universitari. Sapevo a cosa andavo incontro durante lo studio di materie vicine a matematica o fisica, ma su tutto ciò che riguardava lo sviluppo del software ero completamente allo sbaraglio. Visto che tutto il percorso universitario era composto per almeno il 60% da materie vicino all’IT, posso confermare che è stato come una notte al museo durata cinque anni e due tesi.
 
-Iniziando a lavorare, mi sono reso conto di quanto le persone risultino impreparate a dare un contributo di qualità allo sviluppo del codice sorgente. Tutti iniziamo con esperienze in *stage* o tirocini come semplici programmatori; dopo un percorso universitario, è una cosa che si riesce a fare discretamente bene senza bisogno di tanta formazione aggiuntiva. Troppe volte mi è capitato di sviluppare in *team* composti da persone eterogenee e soprattutto su progetti partiti male e mantenuti peggio.
+Iniziando a lavorare, mi sono reso conto di quanto le persone risultino impreparate a dare un contributo di qualità allo sviluppo del codice sorgente. Tutti iniziamo con esperienze in *stage* o tirocini come semplici programmatori; dopo un percorso universitario, è una cosa che si riesce a fare discretamente bene senza bisogno di tanta formazione aggiuntiva. Troppe volte mi è capitato di sviluppare in team composti da persone eterogenee e soprattutto su progetti partiti male e mantenuti peggio.
 
 Credo molto nella condivisione del codice, ragion per cui sviluppo codice *open-source* ogni volta che ne ho l’occasione. Perché, dunque, non condividere delle regole socialmente valide nell’IT, in modo da aiutare la nascita di nuovi ottimi sviluppatori?
 
-Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di integrare e modificare
+Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di integrare e modificare.
 
 # Le dieci regole fondamentali
 
@@ -41,7 +41,7 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 3.  **Sviluppa codice generico e riusabile**
 
-    Durante la progettazione e lo sviluppo di codice sorgente, è naturale prendere come base la richiesta funzionale del cliente per mettere in piedi le prime classi, *script*, oggettie e funzioni.
+    Durante la progettazione e lo sviluppo di codice sorgente, è naturale prendere come base la richiesta funzionale del cliente per mettere in piedi le prime classi, *script*, oggetti e funzioni.
     
 	Non è sbagliato, ma si può incorrere in un errore molto comune, cioè la presenza di codice inutilizzabile fuori da quel preciso contesto. Questa situazione porta a duplicazione, perdita di leggibilità e difficoltà nella manutenzione del codice. Tutto questo fortunatamente si può evitare scrivendo quanto più possibile *codice generico*.
 	
@@ -62,10 +62,10 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
     Questo consiglio è più che attuale ed è la base per le architetture di tipo SOA (*Service-oriented architecture*).
     
-	L’ideale è progettare e sviluppare componenti *software* *ortogonali*, cioè completamente isolate. La modifica di ogni componente non deve interferire con il corretto funzionamento delle altre. Immaginate una navicella spaziale diretta verso Marte: a metà del viaggio, uno dei pannelli solari smette di produrre energia, ma gli altri continuano a funzionare indisturbati, evitando il collasso immediato di tutto il sistema vitale della navicella spaziale. 
+	L’ideale è progettare e sviluppare componenti software *ortogonali*, cioè completamente isolate. La modifica di ogni componente non deve interferire con il corretto funzionamento delle altre. Immaginate una navicella spaziale diretta verso Marte: a metà del viaggio, uno dei pannelli solari smette di produrre energia, ma gli altri continuano a funzionare indisturbati, evitando il collasso immediato di tutto il sistema vitale della navicella spaziale. 
 	
-	Il *software* è come una navicella spaziale: ogni componente è a sé stante, ha il suo scopo e deve avere una *singola responsabilità*.
-    Se si progetta *software* con componenti *ortogonali*, si fa sempre la scelta giusta.
+	Il software è come una navicella spaziale: ogni componente è a sé stante, ha il suo scopo e deve avere una *singola responsabilità*.
+    Se si progetta software con componenti *ortogonali*, si fa sempre la scelta giusta.
 
 6.  **Ragiona e rifletti prima di scrivere codice**
 
@@ -97,7 +97,7 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 1.  **Rispetta sempre gli standard**
 
-    È sempre buona norma utilizzare standard per l’impostazione del codice. I *design pattern* della Gang of Four sono un ottimo esempio. Potresti guadagnarti la stima e il rispetto dei colleghi, se produci *software* di qualità; viceversa, se ti lanci verso un *hackathon* di *spaghetti-code*, probabilmente finirai per essere il bersaglio durante il gioco a freccette nella sala relax aziendale.
+    È sempre buona norma utilizzare standard per l’impostazione del codice. I *design pattern* della Gang of Four sono un ottimo esempio. Potresti guadagnarti la stima e il rispetto dei colleghi, se produci software di qualità; viceversa, se ti lanci verso un *hackathon* di *spaghetti-code*, probabilmente finirai per essere il bersaglio durante il gioco a freccette nella sala relax aziendale.
 
 2.  **Proteggi il *branch* principale e segui un *versioning* ben preciso**
 
@@ -105,7 +105,7 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 3.  **Commenta e indenta il codice adeguatamente**
 
-    Ad inizio progetto, bisogna allineare le configurazioni di indentazione di ogni membro del *team*. Di solito gli IDE ti consentono di sovrascrivere le configurazioni di *default*. Sceglietene una e allineate tutti gli IDE dei componenti del *team*. È anche un bel gesto commentare (senza scrivere un poema) il codice sorgente: i colleghi apprezzeranno. Creare una documentazione del codice sorgente, sopratutto per le componenti riusabili e generiche, è altrettando un gesto apprezzato. Se segui questo consiglio, hai l’opportunità di diventare la *rockstar* del tuo *open-space*. Non mi farei sfuggire questa occasione.
+    Ad inizio progetto, bisogna allineare le configurazioni di indentazione di ogni membro del *team*. Di solito gli IDE ti consentono di sovrascrivere le configurazioni di *default*. Sceglietene una e allineate tutti gli IDE dei componenti del *team*. È anche un bel gesto commentare (senza scrivere un poema) il codice sorgente: i colleghi apprezzeranno. Creare una documentazione del codice sorgente, soprattutto per le componenti riusabili e generiche, è altrettando un gesto apprezzato. Se segui questo consiglio, hai l’opportunità di diventare la *rockstar* del tuo *open-space*. Non mi farei sfuggire questa occasione.
 
 4.  **Coinvolgi subito i colleghi interessati se sospetti un *merge-conflict***
 
@@ -125,7 +125,7 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 2.  **Ricrea in locale un ambiente simile a quello in cui si effettua il *deploy***
 
-    Ricrea in locale l’ambiente di sviluppo o produzione. Ti eviterà di pronunciare la famigerata frase «A me in locale va», che è fastidiossima e ormai non più accettata come giustificazione. Con strumenti come Docker è possibile ricreare l’ambiente adeguatamente senza troppi fronzoli.
+    Ricrea in locale l’ambiente di sviluppo o produzione. Ti eviterà di pronunciare la famigerata frase «A me in locale va», che è fastidiosissima e ormai non più accettata come giustificazione. Con strumenti come Docker è possibile ricreare l’ambiente adeguatamente senza troppi fronzoli.
 
 3.  **Leggi il codice degli altri**
 
@@ -141,4 +141,4 @@ Questo articolo ha il *solo* scopo di fornire un indirizzo. Sentitevi liberi di 
 
 Bibliografia
 ==========================
-<span>99</span> Andrew Hunt e David Thomas (2018). [Il Pragmatic Programmer. Guida per manovali del software che voglioni diventare maestri.](https://www.amazon.it/dp/8850332548/ref=cm_sw_em_r_mt_dp_AvYCFbNVMFA1X) .
+<span>99</span> Andrew Hunt e David Thomas (2018). [Il Pragmatic Programmer. Guida per manovali del software che vogliono diventare maestri](https://www.amazon.it/dp/8850332548/ref=cm_sw_em_r_mt_dp_AvYCFbNVMFA1X).
