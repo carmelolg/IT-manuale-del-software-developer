@@ -1,74 +1,64 @@
 \section{Le dieci regole fondamentali}
 
-
-%\subsubsection*{Se non ti piace sviluppare, non lo fare}
-
 \begin{enumerate}
 
 %1
-\item \textbf{Se non ti piace sviluppare, non lo fare}
-
-Durante la lettura di un libro, scritto da grandi \emph{software architect}, mi son trovato davanti la seguente frase: <<Pensiamo che non abbia senso sviluppare software se non si ha intenzione di farlo bene>>. Mi ha fatto molto riflettere perché a mio parere si può contestualizzare in ogni ambiente di lavoro. Inutile fare per forza qualcosa se non si riesce a contribuire nel migliore dei modi. Scrivere codice fatto bene è come un operazione chirurgica, tutto il team deve essere compatto e non ci si può permettere di lesionare parti del paziente. Se non è la tua strada proponiti per un altro dipartimento della tua azienda o in altri contesti. Revisionando la celebre frase <<Meglio un buon padre che un cattivo prete>>, con la stessa potenza mistica penso che sia \textbf{meglio fare qualcos'altro bene che sviluppare terribilmente}.
+\item \textbf{Se non ti piace sviluppare, non lo fare} \\
+Durante la lettura di un libro scritto da grandi \emph{software architect}, mi son trovato davanti la seguente frase: «Pensiamo che non abbia senso sviluppare software se non si ha intenzione di farlo bene». Mi ha fatto molto riflettere, perché a mio parere si può contestualizzare in ogni ambiente di lavoro. Inutile fare per forza qualcosa, se non si riesce a contribuire nel migliore dei modi. Scrivere codice fatto bene è come un’operazione chirurgica: tutto il team deve essere compatto e non ci si può permettere di lesionare parti del paziente. Se non è la tua strada, proponiti per un altro dipartimento della tua azienda o in altri contesti. \\
+Revisionando la celebre frase «Meglio un buon padre che un cattivo prete», con la stessa potenza mistica penso che sia «Meglio fare qualcos’altro bene che sviluppare terribilmente».
 
 %2
-\item \textbf{Di' <<no>> al tutto e subito}
-
-Spesso, nei più svariati contesti, ci sono feature e correzioni da implementare a tempo zero (o addirittura per ieri). Ovviamente le situazioni di emergenza esistono e vanno trattate come tali. Se però l'emergenza diventa la quotidianità le opzioni sono due:
-\begin{itemize}
-\item Non siete nell'azienda giusta
-\item A tutti i livelli di seniority c'è un problema di organizzazione da risolvere
-\end{itemize}
-
-In ogni caso il mio suggerimento è: \textbf{niente panico}. La prima cosa che lo sviluppatore medio pensa è: <<ora gli mollo un \emph{taccone} e in mezz'ora sono pronto per il deploy in produzione>>. Niente di più sbagliato. Agendo secondo questo principio del \emph{tutto e subito} stiamo solamente portando avanti la \textbf{teoria dei vetri rotti}. \\
-La teoria dei vetri rotti sostiene, parafrasando, che un palazzo con una finestra rotta, potrebbe generare fenomeni di emulazione, portando qualcun altro a rompere un lampione o un idrante, dando così inizio a una spirale di degrado urbano e sociale. Ora il nostro palazzo è il codice sorgente e i passanti siamo noi programmatori. Il nostro compito è mantenere il palazzo in ottime condizioni e soprattutto evitare che qualcuno rompa le componenti. \\ \\
-<<Si, bravo, belle parole, ma io ora come faccio? Devo consegnare fra mezz'ora>>. Nessun problema, l'allenamento è la miglior pratica: più ti allenerai a trovare la soluzione migliore e progettarla con altrettanta cura, più velocizzerai il modo di refattorizzare codice nel più breve tempo possibile. \'E una skill da non sottovalutare\dots e fa anche curriculum.
+\item \textbf{Di' «no» al tutto e subito} \\
+Spesso, nei più svariati contesti, ci sono \emph{feature} e correzioni da implementare a tempo zero (o addirittura per ieri). Ovviamente le situazioni di emergenza esistono e vanno trattate come tali. Se però l’emergenza diventa la quotidianità le opzioni sono due:
+	\begin{itemize}
+		\item non siete nell'azienda giusta;
+		\item a tutti i livelli di \emph{seniority} c'è un problema di organizzazione da risolvere.
+	\end{itemize}
+In ogni caso il mio suggerimento è: \emph{niente panico}. La prima cosa che lo sviluppatore medio pensa è: «Ora gli mollo un \emph{taccone} e in mezz’ora sono pronto per il \emph{deploy} in produzione». Niente di più sbagliato. Agendo secondo questo principio del \emph{tutto e subito}, stiamo solamente portando avanti la \emph{teoria dei vetri rotti}. \\
+La teoria dei vetri rotti sostiene, parafrasando, che un palazzo con una finestra rotta potrebbe generare fenomeni di emulazione, portando qualcun altro a rompere un lampione o un idrante e dando così inizio a una spirale di degrado urbano e sociale. Il nostro palazzo è il codice sorgente e i passanti siamo noi programmatori. Il nostro compito è mantenere il palazzo in ottime condizioni e soprattutto evitare che qualcuno rompa le componenti. \\
+«Sì, bravo, belle parole. Ma io ora come faccio? Devo consegnare fra mezz’ora». Nessun problema, l’allenamento è la miglior pratica: più ti allenerai a trovare la soluzione migliore e progettarla con altrettanta cura, più velocizzerai il modo di refattorizzare codice nel più breve tempo possibile. È una \emph{skill} da non sottovalutare, e fa anche curriculum.
 
 %3
-\item \textbf{Sviluppa codice generico e riusabile}
-
-Durante la progettazione e lo sviluppo di codice sorgente è naturale prendere come base la richiesta funzionale del cliente per mettere in piedi le prime classi, script, oggetti, funzioni etc.\\ Non è sbagliato ma si può incorrere in un errore molto comune cioè la presenza di codice inutilizzabile fuori da quel preciso contesto. Questa situazione porta a duplicazione, perdita di leggibilità e difficoltà nella manutenzione del codice. Tutto questo fortunatamente si può evitare scrivendo quanto più possibile \emph{codice generico}. \\ \\
-Un esempio pratico è la scrittura di un file Excel, che consiste nella creazione dell'header, nella scrittura del contenuto e l'aggiunta finale di tutte le configurazioni necessarie.\\
-Si può pensare di creare delle classi che generano file excel a prescindere dal contesto applicativo. Queste classi forniscono dei metodi per ricevere in input l'insieme dei valori da inserire nell'header e la lista dei valori da scrivere nel contenuto. Come assemblare il file, crearlo e restituirlo (ad esempio sotto forma di \emph{byte[]}) sarà in carico alle classi generiche. \\Se in altre parti del software sarà necessario creare un file Excel con altri requisiti funzionali, basterà richiamare la stessa classe e si eviterà parecchio codice duplicato. \\ \\
-Quindi il mio suggerimento è: \textbf{quando progetti l'implementazione di una feature, accertati che le componenti siano generiche e riusabili}
+\item \textbf{Sviluppa codice generico e riusabile} \\
+Durante la progettazione e lo sviluppo di codice sorgente, è naturale prendere come base la richiesta funzionale del cliente per mettere in piedi le prime classi, \emph{script}, oggetti e funzioni. \\
+Non è sbagliato, ma si può incorrere in un errore molto comune, cioè la presenza di codice inutilizzabile fuori da quel preciso contesto. Questa situazione porta a duplicazione, perdita di leggibilità e difficoltà nella manutenzione del codice. Tutto questo fortunatamente si può evitare scrivendo quanto più possibile \emph{codice generico}. \\
+Un esempio pratico è la scrittura di un file Excel, che consiste nella creazione dell’\emph{header}, nella scrittura del contenuto e l’aggiunta finale di tutte le configurazioni necessarie. \\
+Si può pensare di creare delle classi che generano file Excel a prescindere dal contesto applicativo. Queste classi forniscono dei metodi per ricevere in \emph{input} l’insieme dei valori da inserire nell’\emph{header} e la lista dei valori da scrivere nel contenuto. Come assemblare il file, crearlo e restituirlo (ad esempio sotto forma di \texttt{byte[]}) sarà in carico alle classi generiche. \\
+Se in altre parti del software sarà necessario creare un file Excel con altri requisiti funzionali, basterà richiamare la stessa classe e si eviterà parecchio codice duplicato. \\
+Quindi il mio suggerimento è: quando progetti l’implementazione di una \emph{feature}, accertati che le componenti siano generiche e riusabili.
 
 %4
-\item \textbf{Confrontati}
-
+\item \textbf{Confrontati} \\
 Il confronto in un team è il vero punto di forza. \\
-Quando non sai come impostare il codice sorgente chiedi di fare pair-programming ad un collega o al Technical Leader di riferimento: le orchestre funzionano perché sono composte da tanti musicisti con strumenti diversi, non rischiare di fare un assolo di bombardino (non è bello e né orecchiabile, fidati).
+Quando non sai come impostare il codice sorgente, chiedi di fare \emph{pair-programming} ad un collega o al \emph{Technical Leader} di riferimento: le orchestre funzionano perché sono composte da tanti musicisti con strumenti diversi; non rischiare di fare un assolo di bombardino (non è bello né orecchiabile, fidati).
 
 %5
-\item \textbf{Sviluppa codice \emph{ortogonale}} 
-
-Questo consiglio è più che attuale ed è la base per le architetture di tipo SOA (Service-oriented architecture). \\
-L'ideale è progettare e sviluppare componenti software ortogonali cioè completamente isolate. La modifica di ogni componente non deve interferire con il corretto funzionamento delle altre. Immaginate una navicella spaziale diretta verso Marte. A metà del viaggio uno dei pannelli solari smette di produrre energia, gli altri continuano a funzionare indisturbati evitando il collasso immediato di tutto il sistema vitale della navicella spaziale. Il software è come una navicella spaziale, ogni componente è a se stante, ognuna ha il suo scopo e deve avere una \textbf{singola responsabilità}.\\
-Se si progetta software con componenti ortogonali si fa sempre la scelta giusta.
+\item \textbf{Sviluppa codice \emph{ortogonale}} \\
+Questo consiglio è più che attuale ed è la base per le architetture di tipo \textsc{soa} (\emph{Service-oriented architecture}). \\
+L’ideale è progettare e sviluppare componenti software \emph{ortogonali}, cioè completamente isolate. La modifica di ogni componente non deve interferire con il corretto funzionamento delle altre. Immaginate una navicella spaziale diretta verso Marte: a metà del viaggio, uno dei pannelli solari smette di produrre energia, ma gli altri continuano a funzionare indisturbati, evitando il collasso immediato di tutto il sistema vitale della navicella spaziale. Il software è come una navicella spaziale: ogni componente è a sé stante, ha il suo scopo e deve avere una \emph{singola responsabilità}. \\
+Se si progetta software con componenti \emph{ortogonali}, si fa sempre la scelta giusta.
 
 %6
-\item \textbf{Ragiona e rifletti prima di scrivere codice}
-
-Durante l'implementazione del codice sorgente, anche quando il tempo a disposizione non manca, tendiamo a non dedicare il tempo necessario per una progettazione adeguata. Magari in quel momento preferiamo optare per una risoluzione veloce e funzionante non badando al concetto di riusabilità e manutenibilità. In poche parole, stai per fare un taccone e nessuno ti potrà fermare. Per evitare di prendere numerosi insulti dai colleghi che malauguratamente si troveranno a dover mantenere quel codice, ti consiglio di porti la seguente domanda: \textbf{c'è un'alternativa più valida?} Esiste certamente dunque sviluppala, non vorrei mai che ti mandassero delle macumbe potentissime dove potresti rimanere offeso (semi-cit).
+\item \textbf{Ragiona e rifletti prima di scrivere codice} \\
+Durante l’implementazione del codice sorgente, anche quando il tempo a disposizione non manca, tendiamo a non dedicare il tempo necessario per una progettazione adeguata. Magari in quel momento preferiamo optare per una risoluzione veloce e funzionante, non badando al concetto di riusabilità e manutenibilità. In poche parole, stai per fare un \emph{taccone} e nessuno ti potrà fermare. \\
+Per evitare di prendere numerosi insulti dai colleghi che malauguratamente si troveranno a dover mantenere quel codice, ti consiglio di porti la seguente domanda: c’è un’alternativa più valida? Esiste certamente, dunque sviluppala. Non vorrei mai che ti mandassero delle macumbe potentissime per le quali potresti rimanere offeso (semi-cit).
 
 %7
-\item \textbf{Sviluppa test adeguati}
-Prima di sviluppare una funzionalità sarebbe meglio sviluppare i test automatici e di integrazione. Tutto ciò non è sempre possibile ma il mio consiglio è di provare sempre ad implementarli. Consapevole del fatto che tantissimo codice sorgente non è coperto da test unitari ci affidiamo alla possibilità che qualche anima di buon cuore possa implementarli anche successivamente: meglio tardi che mai (ma perché non essere proprio noi quell'anima di buon cuore?) 
-\\
-\textbf{E per i test utente?} Testa le evolutive per almeno 15 minuti.
-Il numero è del tutto arbitrario, per definire una funzionalità <<ben testata>> si può scegliere il tempo necessario in base all'entità della \emph{feature}. Penso possa essere utile creare uno schema con tutte le casistiche da testare per ogni funzionalità. L'importante è essere certi di coprire i test utente adeguatamente.
+\item \textbf{Sviluppa test adeguati} \\
+Prima di sviluppare una funzionalità, sarebbe meglio sviluppare i test automatici e di integrazione. Tutto ciò non è sempre possibile, ma il mio consiglio è di provare sempre ad implementarli. \\
+Consapevole del fatto che tantissimo codice sorgente non è coperto da test unitari, ci affidiamo alla possibilità che qualche anima di buon cuore possa implementarli anche successivamente. Meglio tardi che mai, ma perché non essere proprio noi quell’anima di buon cuore? \\
+E per i test utente? Testa le evolutive per almeno quindici minuti. Il numero è del tutto arbitrario: per definire una funzionalità “ben testata” si può scegliere il tempo necessario in base all’entità della \emph{feature}. Penso possa essere utile creare uno schema con tutte le casistiche da testare per ogni funzionalità. L’importante è essere certi di coprire i test utente adeguatamente.
 
 %8
-\item \textbf{Isolati durante lo sviluppo}
-
-Ad un primo appuntamento è galateo spegnere il telefono per dedicare le giuste attenzioni al partner che si ha di fronte. Mentre si sviluppa codice non bisogna farsi distrarre da colleghi o agenti esterni, bisogna essere un'anima sola con il proprio computer. Il vostro partner è il computer. Procuratevi delle cuffie isolanti o se ne avete l'occasione andate in uffici o posti isolati per almeno due ore \dots e spegnete ogni notifica possibile e immaginabile.
+\item \textbf{Isolati durante lo sviluppo} \\
+Ad un primo appuntamento è galateo spegnere il telefono per dedicare le giuste attenzioni al partner che si ha di fronte. Mentre si sviluppa codice, non bisogna farsi distrarre da colleghi o agenti esterni, ma bisogna essere un’anima sola con il proprio computer. Il vostro partner è il computer. Procuratevi delle cuffie isolanti o, se ne avete l’occasione, andate in uffici o posti isolati per almeno due ore. Spegnete ogni notifica possibile e immaginabile.
 
 %9
-\item \textbf{Mantieni aggiornato il team}
-
-Per portare avanti gli sviluppi ed organizzare il team in maniera semplice spesso si utilizzano strumenti come Board, Kanban o simili. Qualsiasi cosa utilizziate \textbf{aggiornatela}. Aggiornare il Team Leader e i colleghi è essenziale. E' come aggiungere dell'olio ad una catena di montaggio e anche una singola persona può inceppare la catena se non olia bene la sua componente.
+\item \textbf{Mantieni aggiornato il team} \\
+Per portare avanti gli sviluppi ed organizzare il team in maniera semplice, spesso si utilizzano strumenti come Board, Kanban o simili. Qualsiasi cosa utilizziate, aggiornatela. Aggiornare il \emph{Team Leader} e i colleghi è essenziale. È come aggiungere dell’olio ad una catena di montaggio: anche una singola persona può inceppare la catena, se non olia bene la sua componente.
 
 %10
-\item \textbf{Leggi libri tecnici}
-
-Può aiutare tantissimo leggere libri tecnici, guide e manuali per implementare codice o architetture software adeguate. Per iniziare consiglio <<The Pragmatic Programmer>> di Hunt e Thomas.
+\item \textbf{Leggi libri tecnici} \\
+Può aiutare tantissimo leggere libri tecnici, guide e manuali per implementare codice o architetture software adeguate. Per iniziare, consiglio \emph{The Pragmatic Programmer} di Hunt e Thomas.
 
 \end{enumerate}
